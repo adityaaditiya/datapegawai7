@@ -31,7 +31,7 @@ Cara Test API :
 
     2. Gunakan token akses dan kemudian anda dapat mengakses parameter dibawah ini :
 
-        API Create :
+        API Create Pegawai :
 
         [POST]http://{your hostname}/api/pegawai
         
@@ -45,11 +45,11 @@ Cara Test API :
                     [agama]
 
 
-        API Show :
+        API Show Pegawai :
 
         [GET]http://{your hostname}/api/pegawai/("id pegawai yang akan ditampilkan")
 
-        API Update :
+        API Update Pegawai :
 
         [POST]http://{your hostname}/api/pegawai/("id pegawai yang akan di ubah")
 
@@ -63,8 +63,35 @@ Cara Test API :
                     [status_menikah]("jika yang ingin diubah hanya Status Menikah cukup tambahkan parameter ini")
                     [agama]("jika yang ingin diubah hanya agama cukup tambahkan parameter ini")
 
-        API delete :
+        API delete Pegawai :
 
         [DELETE]http://{your hostname}/api/pegawai/("id pegawai yang akan di hapus")
+        
+        API Create Aktivitas:
+
+        [POST]http://{your hostname}/api/aktivitas
+        
+        Parameter : [kode_id]
+                    [nama]
+                    
+
+        API Show Aktivitas :
+
+        [GET]http://{your hostname}/api/aktivitas/("id aktivitas yang akan ditampilkan")
+
+        API Update Aktivitas :
+
+        [POST]http://{your hostname}/api/aktivitas/("id aktivitas yang akan di ubah")
+
+        Parameter :(key)[_method]  (value)[put]
+                    [kode_id] ("jika yang ingin diubah hanya kode_id cukup tambahkan parameter ini")
+                    [nama]("jika yang ingin diubah hanya nama cukup tambahkan parameter ini")
+
+        API delete Aktivitas :
+
+        [DELETE]http://{your hostname}/api/aktivitas/("id aktivitas yang akan di hapus")
+        
+        
+        
 
 # datapegawai7
