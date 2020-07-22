@@ -75,7 +75,10 @@
                                         {{ __('Data Aktivitas') }}
                                     </a>
 
-
+                                    <a class="dropdown-item" href="{{route('editpassword')}}"
+                                      >
+                                        {{ __('Change Password') }}
+                                    </a>
 
                                     <form action="{{route('aktivitas')}}" method="POST" style="display: none;">
                                         @csrf

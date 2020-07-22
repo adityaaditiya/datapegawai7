@@ -28,3 +28,6 @@ Route::resource('/pegawai', 'HomeController')->except('index');
 Route::get('/aktivitas', 'AktivitasController@index')->name('aktivitas');
 Route::get('/lis', 'AktivitasController@getData')->name('aktivitas.lis');
 Route::resource('/aktivitas', 'AktivitasController')->except('index');
+
+Route::get('/password', 'HomeController@editpassword')->name('editpassword');
+Route::post('/password', 'HomeController@updatepassword')->name('updatepassword');
